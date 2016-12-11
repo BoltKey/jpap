@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'bohemian-typewriter'; 
+    src: url('Bohemian-typewriter.ttf'); 
+	
+}
+
+body {
+	font-family: bohemian-typewriter;
+	background: #111111;
+}
+.eye {
+	position: absolute;
+	left: 0px;
+	width: 500px;
+	height: 300px;
+	background: #111111;
+	transition: top 5s, height 5s;
+	z-index: 15;
+}
+#speech1, #speech0 {
+	width: 400px;
+	height: 100px;
+	color: white;
+	padding: 30px;
+	border-radius: 20px;
+	z-index: 16;
+	transition: top 2s, height 2s, width 2s, left 2s;
+}
+#speaker0, #speaker1, #mainScreen {
+	transition: opacity 3s;
+}
+#speech1 {
+	position: absolute;
+	background: #777777;
+	top: 400px;
+	left: 20px;
+}
+#selection {
+	position: absolute;
+	background: #777777;
+	top: 500px;
+	left: 30px;
+	z-index: 17;
+}
+
+#speech0 {
+	position: absolute;
+	background: black;
+	top: 40;
+	left: 20;
+}
+
+.note {
+	font-size: 12px;
+}
+#q3amt {
+	font-family: bohemian-typewriter;
+	background: #f8ecc2;
+}
+.graphcanvas {
+	background: #f8ecc2;
+	width: 90px;
+	height: 30px;
+	transition: transform .5s;
+	float: left;
+	margin: 10px 200px 0px 0px ;
+}
+#score {
+	color: white;
+	z-index: 20;
+	position: absolute;
+}
+.graphcanvas:hover {
+	transform: scale(5, 5) translateX(40px);
+}
+#mainScreen {
+	position: absolute;
+	top: 190px;
+	width: 450px;
+	height: 200px;
+	z-index: 10;
+	padding: 15px;
+	opacity: 0;
+	transition: opacity 2s;
+}
+#graphWrap {
+	position: absolute;
+	top: 190px;
+	width: 150px;
+	height: 229px;
+	z-index: 18;
+}
+
+
+.answerButton, #muteButton {
+	
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	margin: 5px;
+	font-family: bohemian-typewriter;
+	color: #ffffff;
+	font-size: 14px;
+	background: #4d4d4d;
+	text-decoration: none;
+	padding: 4px;
+}
+
+.smallButton {
+	font-size: 10px;
+}
+
+.answerButton:hover, #muteButton:hover {
+  background: #616161;
+  text-decoration: none;
+}
+
+#muteButton {
+	position: absolute;
+	top: 2px;
+	left: 400px;
+	z-index: 20;
+}
